@@ -4,6 +4,11 @@
     "description": "Saves your time spent on different projects on Github. This allows for easier time tracking if you are getting paid for it.",
     "version": "0.0.1",
     "publisher": "Buckwich",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Buckwich/projectTime"
+    },
+    "license": "MIT",
     "engines": {
         "vscode": "^1.18.0"
     },
@@ -17,8 +22,9 @@
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "projectTime.tag",
+                "title": "Tag now",
+                "category": "projectTime"
             }
         ]
     },
@@ -32,8 +38,11 @@
     "devDependencies": {
         "@types/mocha": "^2.2.42",
         "@types/node": "^7.0.43",
+        "bdb": "0.0.0",
+        "git-emit": "0.0.0",
         "request-light": "^0.2.1",
         "typescript": "^2.6.1",
         "vscode": "^1.1.6"
-    }
+    },
+    "dependencies": {}
 }
